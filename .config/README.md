@@ -77,17 +77,23 @@ Esse é basicamente um instalador de programas, para que isso seja possível a p
 
 [Site](https://scoop.sh/)
 
-`irm get.scoop.sh | iex`
+```powershell
+irm get.scoop.sh | iex
+```
 
 Adicionar o diretório `C:\Users\<USERNAME>\scoop\shims` (substituindo o `<USERNAME>` pelo meu username na máquina) como um novo diretório dentre as variáveis ambiente da máquina dentro de Path.
 
 # Curl, Sudo e jq
 
-`scoop install curl sudo jq`
+```powershell
+scoop install curl sudo jq
+```
 
 # Neovim
 
-`scoop install neovim`
+```powershell
+scoop install neovim
+```
 
 # Oh My Posh
 
@@ -95,7 +101,9 @@ Programa para configuração do terminal. Deixa ele mais bonitinho, colocando te
 
 [Site](https://ohmyposh.dev/)
 
-`Install-Module oh-my-posh`
+```powershell
+Install-Module oh-my-posh
+```
 
 # Posh git
 
@@ -103,23 +111,31 @@ Programa para autocomplete no git.
 
 [Site](https://github.com/dahlbyk/posh-git)
 
-`Import-Module posh-git`
+```powershell
+Install-Module posh-git -Scope CurrentUser -Force
+```
 
 # Terminal Icons
 
 Para ter ícones bonitinhos no terminal. Ele identifica o tipo de arquivo e coloca esse ícone ilustrativo.
 
-`Import-Module -Name Terminal-Icons -Repository PSGallery -Force`
-`Import-Module Terminal-Icons`
+```powershell
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Import-Module Terminal-Icons
+```
 
 # z
 
 Tem um intelissense que identifica seu histórico de comandos e cria "atalhos"
 
-`Import-Module -Name z -Force`
+```powershell
+Install-Module -Name Z -Force
+```
 
 # PSReadLine
 
 Autocomplete bacana.
 
-`Import-Module -Name PSReadLine -AllowPrerelease -Force -SkipPublisherCheck`
+```powershell
+Install-Module -Name PSReadLine -AllowPrerelease -Force -SkipPublisherCheck
+```
