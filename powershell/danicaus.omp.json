@@ -18,11 +18,11 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": " \uf07b ",
-            "home_icon": "\uf7dd",
+            "home_icon": " \uf7dd ",
             "style": "full"
           },
           "style": "powerline",
-          "template": " \uf07b \uf553 {{ .Path }} ",
+          "template": " \uf07b \uf553{{ .Path }} ",
           "type": "path"
         },
         {
@@ -46,14 +46,6 @@
           "type": "git"
         },
         {
-          "background": "#8be9fd",
-          "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-          "type": "node"
-        },
-        {
           "background": "#ff79c6",
           "foreground": "#f8f8f2",
           "properties": {
@@ -61,8 +53,24 @@
           },
           "style": "diamond",
           "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0c6",
+          "trailing_diamond": "\ue0b0",
           "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#8be9fd",
+          "foreground": "#f8f8f2",
+          "invert_powerline": true,
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "\ue0b4",
+          "style": "diamond",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
         }
       ],
       "type": "prompt"
@@ -74,12 +82,16 @@
         {
           "foreground": "#6272a4",
           "style": "plain",
-          "template": "\u2570\u2500\ue602 ",
+          "template": "\u2570\u2500",
           "type": "text"
         },
         {
+          "background": "#6272a4",
           "foreground": "#f1fa8c",
-          "style": "plain",
+          "invert_powerline": true,
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "style": "diamond",
           "template": "\ue285 ",
           "type": "text"
         }
