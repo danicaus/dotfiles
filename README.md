@@ -1,6 +1,15 @@
 # Meus dotfiles
 
-Aqui estão algumas configurações que curto na minha máquina Windows 10.
+Aqui estão algumas configurações que curto na minha máquina Windows.
+
+# Configuraçôes iniciais
+
+Antes de executar os dotfiles, é necessário que a máquina tenha:
+- Terminal
+- Git
+```powershell
+  winget install --id Git.Git -e --source winget
+```
 
 # Setup dos dotfiles
 
