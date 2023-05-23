@@ -6,3 +6,7 @@
 [user]
 	name = Daniela Caus
 	email = 38079926+danicaus@users.noreply.github.com
+[safe]
+	directory = C:/Projects/UX.Web
+	directory = C:/Projects/UX.API
+	directory = C:/Projects/UX.Front

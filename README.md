@@ -1,27 +1,24 @@
 # Meus dotfiles
 
-Aqui estão algumas configurações que curto na minha máquina Windows.
+Configurações para minha máquina Windows.
 
-# Configuraçôes iniciais
-
-Antes de executar os dotfiles, é necessário que a máquina tenha:
-- Terminal
-- Git
+## Como usar
+Para executar os scripts, basta usar o comando `. <localização-arquivo>` no terminal Windows:
 ```powershell
-  winget install --id Git.Git -e --source winget
-```
-
-# Setup dos dotfiles
-
-- Instalar os módulos do PowerShell indicados no [README](./.config/README.md)
-- Clonar esse repositório na pasta do usuário
-- Executar o symlink
-- Carregar o profile do Powershell
-
-Em resumo:
-
-```powershell
-  git clone https://github.com/danicaus/dotfiles.git ~\.dotfiles
   . ~\.dotfiles\symlink.ps1
-  . $PROFILE
 ```
+
+### Pré-requisitos
+
+- Importante instalar essa pasta na raiz do usuário (Exemplo: `C:/Users/danicaus`)
+- Windows deve possuir winget. Se não, [instalar winget](https://learn.microsoft.com/pt-br/windows/package-manager/winget/).
+
+###  Pacotes
+No caso de uma nova máquina Windows, criei essa pasta para instalar programas.
+
+###  Pacotes
+Pasta com scripts para instalação de pacotes, features e ferramentas do Windows, entre outras coisas.
+
+### Configurações
+Com alguns programas instalados, Esses são os arquivos de configuração deles.
+
