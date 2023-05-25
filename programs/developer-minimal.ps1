@@ -5,6 +5,7 @@ winget install OpenJS.NodeJS --silent --accept-package-agreements
 # Powershell
 winget install Microsoft.PowerShell --silent --accept-package-agreements
 winget install Microsoft.WindowsTerminal --silent --accept-package-agreements
+winget install JanDeDobbeleer.OhMyPosh -s winget --silent --accept-package-agreements
 
 # Dev tools
 winget install Insomnia.Insomnia --silent --accept-package-agreements

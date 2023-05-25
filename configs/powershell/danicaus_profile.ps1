@@ -1,5 +1,4 @@
 # Prompt
-# Import-Module oh-my-posh
 Import-Module posh-git
 Import-Module -Name Terminal-Icons
 
@@ -15,5 +14,4 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Adaptando comandos do teclado
-Set-Alias vim nvim
 Set-Alias g git
