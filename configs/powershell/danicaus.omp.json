@@ -57,7 +57,8 @@
           "type": "time"
         }
       ],
-      "type": "prompt"
+      "type": "prompt",
+      "overflow": "break"
     },
     {
       "alignment": "right",
@@ -73,7 +74,8 @@
           "type": "node"
         }
       ],
-      "type": "prompt"
+      "type": "prompt",
+      "overflow": "break"
     },
     {
       "alignment": "left",
@@ -96,7 +98,8 @@
           "type": "text"
         }
       ],
-      "type": "prompt"
+      "type": "prompt",
+      "overflow": "break"
     }
   ],
   "final_space": true,

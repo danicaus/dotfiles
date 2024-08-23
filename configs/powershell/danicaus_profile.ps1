@@ -3,7 +3,9 @@ Import-Module posh-git
 Import-Module -Name Terminal-Icons
 
 # Carrega configurações do prompt
-oh-my-posh init pwsh --config '~\.config\PowerShell\danicaus.omp.json' | Invoke-Expression
+$powerShellPath = (Split-Path -parent $PROFILE)
+oh-my-posh init pwsh --config "$powerShellPath\danicaus.omp.json" | Invoke-Expression
+fnm env --use-on-cd --shell power-shell | Out-String | Invoke-Expression
 
 # Navegação com autocomplete
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
