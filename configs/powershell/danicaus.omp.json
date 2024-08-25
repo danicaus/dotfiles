@@ -5,56 +5,55 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "session",
+          "style": "diamond",
           "background": "#6272a4",
           "foreground": "#f8f8f2",
           "leading_diamond": "\u256d\u2500\ue0b6",
-          "style": "diamond",
-          "template": "\uf508 {{ .UserName }} ",
-          "type": "session"
+          "template": "\uf508 {{ .UserName }} "
         },
         {
+          "type": "path",
+          "style": "powerline",
           "background": "#bd93f9",
           "foreground": "#f8f8f2",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "folder_icon": " \uf07b ",
-            "home_icon": " \uf7dd ",
+            "folder_icon": "\uf07b",
             "style": "full"
           },
-          "style": "powerline",
-          "template": " \uf07b \uf553{{ .Path }} ",
-          "type": "path"
+          "template": " \uf07b  {{ .Path }} "
         },
         {
+          "type": "git",
+          "style": "powerline",
           "background": "#ffb86c",
+          "foreground": "#f8f8f2",
+          "powerline_symbol": "\ue0b0",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ffeb95{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#c5e478{{ end }}",
             "{{ if gt .Ahead 0 }}#C792EA{{ end }}",
             "{{ if gt .Behind 0 }}#C792EA{{ end }}"
           ],
-          "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
           "properties": {
             "branch_icon": "\ue725 ",
             "fetch_stash_count": true,
-            "fetch_status": false,
+            "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "style": "powerline",
-          "template": "({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",
-          "type": "git"
+          "template": "({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) "
         },
         {
+          "type": "time",
+          "style": "diamond",
           "background": "#ff79c6",
           "foreground": "#f8f8f2",
+          "trailing_diamond": "\ue0b0",
           "properties": {
             "time_format": "15:04"
           },
-          "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b0",
-          "type": "time"
+          "template": " \u2665  {{ .CurrentDate | date .Format }} "
         }
       ],
       "type": "prompt",
@@ -62,16 +61,17 @@
     },
     {
       "alignment": "right",
+      "newline": false,
       "segments": [
         {
+          "type": "node",
+          "style": "diamond",
           "background": "#8be9fd",
           "foreground": "#f8f8f2",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
-          "style": "diamond",
-          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-          "type": "node"
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} "
         }
       ],
       "type": "prompt",
@@ -82,20 +82,20 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#6272a4",
+          "type": "text",
           "style": "plain",
-          "template": "\u2570\u2500",
-          "type": "text"
+          "foreground": "#6272a4",
+          "template": "\u2570\u2500"
         },
         {
+          "type": "text",
+          "style": "diamond",
           "background": "#6272a4",
           "foreground": "#f1fa8c",
           "invert_powerline": true,
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
-          "style": "diamond",
-          "template": "\ue285 ",
-          "type": "text"
+          "template": "\ue285 "
         }
       ],
       "type": "prompt",
